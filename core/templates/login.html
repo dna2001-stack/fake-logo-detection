@@ -1,21 +1,26 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
+
 <body>
 
-<div class="container">
-    <h2>User Login</h2>
+    <div class="container">
+        <h2>User Login</h2>
 
-    <form method="post">
-        {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Login</button>
-    </form>
-</div>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Login</button>
+        </form>
+    </div>
 
 </body>
+
 </html>
+
+<!-- Hi am aniket -->
